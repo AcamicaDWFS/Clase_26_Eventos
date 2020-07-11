@@ -1,0 +1,30 @@
+h1 {
+  color: #691A08;
+  text-align: center;
+}
+form {
+  position: relative;
+  width  : 740px;
+  height : 498px;
+  margin-left : 50px;
+}
+label {
+  width: 150px;
+}
+input {
+  width: 250px;
+}
+input:focus {
+  background   : rgba(0,0,0,.1);
+  border-radius: 5px;
+  outline      : none;
+}
+div{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+fieldset{
+  padding-top: 20x;
+  padding-bottom: 20px;
+  margin-top: 0.5cm;
+}
