@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+            <label for="name">NOMBRE</label>
+            <input type="text" id="name" name="name"><br><br>
+            <button type="submit" id="btn">SUBMIT</button>
+        
+    </body>
+
+    <script>
+        
+        let nodo = document.getElementById("btn");
+        let name_1 = document.getElementById("name");
+        nodo.addEventListener("click", function() {validar()});
+        
+        name_1.addEventListener("keydown", event => {
+            if (name_1.value.length != 0) {
+                name_1.style.backgroundColor = "white";
+            }
+            });
+
+        function validar() {
+            if (name_1.value.length == 0) {
+                name_1.style.backgroundColor = "red";
+                alert('El input está vacio');
+            } else {
+                alert("Hola " + name_1.value);
+            }
+        }
+
+    </script>
+</html>

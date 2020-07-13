@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina - maqueta</title>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type=text/css>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><span>LOGO</span></div>
+            <ul class="menu" id="menu_1">
+                <li>ITEM 1</li>
+                <li>ITEM 2</li>
+                <li>ITEM 3</li>
+                <li>ITEM 4</li>
+            </ul>
+        </header>
+        <main>
+            <div class="heading">
+                <div class="left_side" id="parent_node">
+                    <h1 class="title" id="title_heading">Heading</h1>
+                    <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="image"><img src="perrito2.jpg" id="cachorro"></div>
+            </div>
+
+            <div id="contenedor_padre" class="cuerpo">
+                <div id="contenedores_imagenes_texto">
+                    <div id="contenedor_imagenes">
+                        <div class="image" id="perrito_1"><img src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5c3871215bafe83b078adbe3/perro.jpg"></div>
+                        <div class="image_2" id="perrito_2"><img src="https://t2.ea.ltmcdn.com/es/images/5/6/2/10_caracteristicas_de_los_perros_24265_600.jpg"></div>
+                    </div>
+                    <div class="contenedor_texto">
+                        <p class="nombre">NOMBRE</p>
+                        <p class="nombre_2">NOMBRE</p>
+                    </div>
+                </div>
+                <button id="boton" onclick="clone_node()">Ver más</button>
+            </div>
+
+            <div class="javascript">
+                <button onclick="agregar_item()">Agregar Item</button><br><br>
+                <button onclick="style_negrita()">Negrita</button><br><br>
+                <button onclick="mover_tarjetas(); retornar_tarjetas()">Mover Tarjetas</button><br><br>
+                <button onclick="setInterval(Index, 3000)">Cambiar Imagen</button><br><br>
+            </div>
+        </main>
+    </body>
+    <script src="script.js" defer></script>
+</html>
