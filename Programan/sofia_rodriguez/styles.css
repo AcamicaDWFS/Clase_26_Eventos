@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 1px solid black;
+    padding: 2%;
+}
+
+header {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 70px;
+    padding: 0 2% 0 2%;
+    margin: 1% 0 1% 0;
+}
+
+#logo {
+    grid-column: 1/2;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 8px;
+    width: 60%;
+    height: 60%;
+    align-self: center;
+}
+
+#logo > span {
+    align-self: center;
+    margin: 0 auto 0 auto;
+}
+
+.menu {
+    grid-column: 2/3;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu > li {
+    display: flex;
+    align-self: center;
+    width: 15%;
+    padding-left: 4%;
+    border-left: 1px solid black;
+}
+
+.heading {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2% 0 2% 0;
+}
+
+.left_side {
+    grid-column: 1/2;
+    padding: 0 6% 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left-side > title {
+    display: flex;
+}
+
+.left-side > p {
+    display: flex;
+}
+
+.heading > .image {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 5% 0;
+}
+
+#cachorro {
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+.cuerpo {
+    border: 1px solid black;
+    margin: 2% 0 2% 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+#contenedor_imagenes {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5% 0 5% 0;
+}
+
+#contenedor_imagenes > .image > img {
+    width: 260px;
+    border-radius: 15px;
+}
+
+#contenedor_imagenes > .image_2 > img {
+    width: 293px;
+    border-radius: 15px;
+}
+
+.contenedor_texto {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cuerpo > #boton {
+    grid-row: 3/4;
+    margin: 5%;
+    height: 30px;
+}
+
+.javascript {
+    padding: 2% 0 2% 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

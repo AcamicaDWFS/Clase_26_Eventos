@@ -9,15 +9,25 @@
     </body>
 
     <script>
-
-        let name_1 = document.getElementById("name").value;
-        function input_boton() {
-            
-            console.log("este es" + name_1);
-            alert("Hola" + name_1);
-        }
+        
         let nodo = document.getElementById("btn");
-        nodo.addEventListener("click", input_boton);
+        let name_1 = document.getElementById("name");
+        nodo.addEventListener("click", function() {validar()});
+        
+        name_1.addEventListener("keydown", event => {
+            if (name_1.value.length != 0) {
+                name_1.style.backgroundColor = "white";
+            }
+            });
+
+        function validar() {
+            if (name_1.value.length == 0) {
+                name_1.style.backgroundColor = "red";
+                alert('El input está vacio');
+            } else {
+                alert("Hola " + name_1.value);
+            }
+        }
 
     </script>
 </html>
