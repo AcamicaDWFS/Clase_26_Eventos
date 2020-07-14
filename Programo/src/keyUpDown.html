@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Presiona una tecla en el teclado dentro de la caja de texto
+       para obtener el código de caracter Unicode y la llave de código
+       Unicode de la tecla presionada.</p>
+
+    <p><strong>Nota:</strong> La propieda keyCode no funciona en el evento
+        onkeypress para caracteres no imprimibles, teclas de funciones 
+        (CAPS LOCK, CTRL, ESC, F12, etc.).</p>
+
+    <input type="text" size="50" onkeypress="uniCharCode(event)" onkeydown="uniKeyCode(event)">
+
+    <p>onkeypress - <span id="demo"></span></p>
+    <p>onkeydown - <span id="demo2"></span></p>
+    <script src="script2.js"></script>
+</body>
+
+</html>
