@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  padding: 2% 10%;
+}
+
+button {
+  font-size: 2rem;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 10px;
+  width: 500px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+nav {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #logo {
+  display: block;
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+nav li:not(:last-child)::after {
+  content: "|";
+  position: relative;
+  left: 20px;
+}
+
+.logo-border {
+  border-top: 2px solid red;
+}
+
+main {
+  padding: 0 10%;
+}
+
+main section {
+  border: 1px solid black;
+  padding: 2% 2%;
+  margin-bottom: 30px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.article img {
+  display: block;
+  width: 100%;
+}
+
+.article p {
+  padding-right: 20px;
+}
+
+.img-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.img-container img {
+  border-radius: 100%;
+}
+
+.img-container div {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
